@@ -1,5 +1,6 @@
 import {useState} from 'react'
 import './Navbar.css';
+import CartWidget from "./Cartwidget.js";
 
 
 const Navbar = () => {
@@ -33,6 +34,8 @@ const Navbar = () => {
                         <li className="barraNav-li"><a href="#" className="barraNav-a">Productos</a></li>
                         <li className="barraNav-li"><a href="#" className="barraNav-a">Contactanos</a></li>
                         <li className="barraNav-li"><a href="#" className="barraNav-a">Carga de productos</a></li>
+                        <li className="barraNav-li"><a href="#" className="barraNav-a"><CartWidget /></a></li>
+                        
                     </ul>
                 </nav>
 
