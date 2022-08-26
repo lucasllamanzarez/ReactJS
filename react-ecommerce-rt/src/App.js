@@ -1,28 +1,29 @@
 import './App.css';
+import React from 'react';
 //Importar Barra de Navegacion
 import Navbar from "./components/Navbar";
-//Importo Componente
-import Cardcom from './components/card/Cardcom';
-import React from 'react';
+//Importar Componente
+import ItemListContainer from './components/card/ItemListContainer';
 
 
-class App extends React.Component {
-    render () {
+
+const App = () => {
+     
         return (
           <div className='App'>
             <nav><Navbar /></nav>
                 <div className="ProdSection">
-                    <Cardcom 
+                    <ItemListContainer 
                     name = 'Placa de video ASUS'
                     description = 'Placa de video ASUS de gran potencia que te permitira jugar a una gran cantidad de juegos'
                     image = './images/placavideo.jpg'
                     />
-                    <Cardcom 
+                    <ItemListContainer 
                     name = 'Thermaltake '
                     description = 'Gabinete de gran calidad y terminacion para los gamers mas exigentes'
                     image = './images/gabinete.jpg'
                     />
-                    <Cardcom 
+                    <ItemListContainer 
                     name = 'Fuente Thermaltake'
                     description = 'Fuente de gran potencia y calidad para alimentar todos tus dispositivos'
                     image = './images/fuente.jpg'
@@ -30,7 +31,7 @@ class App extends React.Component {
                 </div>
             </div>
         );
-     }
+     
   }
 
 export default App;
