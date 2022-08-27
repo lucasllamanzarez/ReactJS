@@ -4,6 +4,7 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { Button, CardActionArea, CardActions } from '@mui/material';
+import Itemcount from './Itemcount';
 
 const ItemListContainer = (props) => {
   return (
@@ -25,6 +26,7 @@ const ItemListContainer = (props) => {
         </CardContent>
       </CardActionArea>
       <CardActions>
+        <Itemcount />
         <Button size="small" color="primary">
           Agregar Producto
         </Button>
