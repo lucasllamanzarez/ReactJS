@@ -6,22 +6,23 @@ import Typography from '@mui/material/Typography';
 import { Button, CardActionArea, CardActions } from '@mui/material';
 import Itemcount from './Itemcount';
 
-const ItemListContainer = (props) => {
+
+const ItemListContainer = (data) => {
   return (
-    <Card sx={{ maxWidth: 345 }}>
+    <Card sx={{ maxWidth: 345, margin: 5}}>
       <CardActionArea>
         <CardMedia
           component="img"
           height="200"
-          image= {props.image}
+          image= {data.image}
           alt="Productos RiseTech"
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="div">
-            {props.name}
+            {data.title}
           </Typography>
           <Typography variant="body2" color="text.secondary">
-           {props.description}
+           {data.description}
           </Typography>
         </CardContent>
       </CardActionArea>
