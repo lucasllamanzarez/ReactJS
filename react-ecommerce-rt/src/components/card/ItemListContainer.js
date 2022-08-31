@@ -8,6 +8,8 @@ import Itemcount from './Itemcount';
 
 
 const ItemListContainer = (data) => {
+
+  console.log(data)
   return (
     <Card sx={{ maxWidth: 345, margin: 5}}>
       <CardActionArea>

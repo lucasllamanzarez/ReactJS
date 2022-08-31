@@ -3,7 +3,7 @@ import React from 'react';
 //Importar Barra de Navegacion
 import Navbar from "./components/Navbar";
 //Importar Componente
-import ItemListContainer from './components/card/ItemListContainer';
+import ItemList from './components/Productos/ItemList';
 
 
 
@@ -14,7 +14,7 @@ const App = () => {
           <div className='App'>
             <nav><Navbar /></nav>
                 <div className="ProdSection">
-                    <ItemListContainer />
+                    <ItemList />
                 </div>
             </div>
         );

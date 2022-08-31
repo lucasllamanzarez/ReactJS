@@ -17,7 +17,7 @@ const ItemList = () => {
     return (
             <div>
                 {products.map((product) => {
-                        return   <ItemListContainer key = {product.id} data={product} />    
+                        return   <ItemListContainer key = {product.id} title={product.title} description={product.description} image={product.image} />    
 
                 })}  
             </div>
