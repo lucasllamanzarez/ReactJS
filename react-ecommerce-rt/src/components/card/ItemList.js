@@ -7,9 +7,8 @@ import { Button, CardActionArea, CardActions } from '@mui/material';
 import Itemcount from './Itemcount';
 
 
-const ItemListContainer = (data) => {
+const ItemList = (data) => {
 
-  console.log(data)
   return (
     <Card sx={{ maxWidth: 345, margin: 5}}>
       <CardActionArea>
@@ -38,4 +37,4 @@ const ItemListContainer = (data) => {
   );
 }
 
-export default ItemListContainer;
+export default ItemList ;

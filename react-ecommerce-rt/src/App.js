@@ -3,9 +3,7 @@ import React from 'react';
 //Importar Barra de Navegacion
 import Navbar from "./components/Navbar";
 //Importar Componente
-import ItemList from './components/Productos/ItemList';
-
-
+import ItemList from './components/Productos/ItemListContainer';
 
 
 const App = () => {

@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import ItemListContainer from '../card/ItemListContainer';
+import ItemList from '../card/ItemList';
 
         
-const ItemList = () => {
+const ItemListContainer = () => {
          const [products, setProducts] = useState([]);
 
              useEffect(() => {
@@ -17,7 +17,7 @@ const ItemList = () => {
     return (
             <div>
                 {products.map((product) => {
-                        return   <ItemListContainer key = {product.id} title={product.title} description={product.description} image={product.image} />    
+                        return   <ItemList key = {product.id} title={product.title} description={product.description} image={product.image} />    
 
                 })}  
             </div>
@@ -25,4 +25,4 @@ const ItemList = () => {
     );
 };
 
-export default ItemList;
+export default ItemListContainer;
