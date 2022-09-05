@@ -3,14 +3,13 @@ import Itemcount from './Itemcount';
 import { Button, Card, CardActionArea, CardActions, CardContent, CardMedia, Typography } from '@mui/material';
 
 
-const Item = ({title, description, image}) => {
+const Item = ({title, price, image}) => {
 
     return (
       <Card sx={{ maxWidth: 345, margin: 5}}>
         <CardActionArea>
           <CardMedia
             component="img"
-            height="200"
             image= {image}
             alt="Productos RiseTech"
           />
@@ -19,7 +18,7 @@ const Item = ({title, description, image}) => {
               {title}
             </Typography>
             <Typography variant="body2" color="text.secondary">
-             {description}
+             $ {price}
             </Typography>
           </CardContent>
         </CardActionArea>
