@@ -10,7 +10,6 @@ const Itemdetail = ({product}) => {
         <CardActionArea>
           <CardMedia
             component="img"
-            height='200'
             image= {product.image}
             alt="Productos RiseTech"
           />

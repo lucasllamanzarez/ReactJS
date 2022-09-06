@@ -5,7 +5,7 @@ const ItemDetailContainer = () => {
   const [product, setProduct] = useState([]);
 
       useEffect(() => {
-                 fetch('https://fakestoreapi.com/products')
+                 fetch('https://fakestoreapi.com/products/1')
              .then(res=>res.json())
          .then(json=>setProduct(json))
       },
